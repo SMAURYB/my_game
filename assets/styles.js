@@ -15,8 +15,9 @@ const styles = StyleSheet.create({
     borderColor: '#ff5733',
     borderWidth: 15,
     borderRadius: 36,
-    margin: 2,
     padding: 0,
+    // justifyContent: 'center',
+    // alignItems: 'center',
   },
   innerContainer: {
     flex: 1,
@@ -33,7 +34,7 @@ const styles = StyleSheet.create({
     top: isLandscape ? 10 : 30,
     fontSize: calculateFontSize(32),
     padding: isTablet ? 36 : 26,
-    fontFamily: 'Comic Sans MS',
+    fontFamily: 'ComicSansMS', // Asegúrate de cargar la fuente correctamente
     fontWeight: 'bold',
     borderRadius: 12,
     backgroundColor: '#ff5749',
@@ -55,7 +56,7 @@ const styles = StyleSheet.create({
   },
   playButtonText: {
     color: '#fff000',
-    fontFamily: 'Comic Sans MS',
+    fontFamily: 'ComicSansMS',
     fontSize: calculateFontSize(44),
     fontWeight: 'bold',
     paddingHorizontal: 9,
@@ -81,7 +82,7 @@ const styles = StyleSheet.create({
     color: '#fff',
     fontSize: calculateFontSize(18),
     fontWeight: 'bold',
-    fontFamily: 'Comic Sans MS',
+    fontFamily: 'ComicSansMS',
   },
   inputPickerSelectorsGroup: {
     width: '100%',
@@ -105,7 +106,7 @@ const styles = StyleSheet.create({
     marginLeft: 4,
     color: '#fff000',
     fontSize: 17,
-    fontWeight: 800,
+    fontWeight: 'bold', // Ajuste de fontWeight
     padding: 8,
   },
   inputTeamGroup: {
@@ -125,7 +126,7 @@ const styles = StyleSheet.create({
     fontSize: calculateFontSize(20),
     color: '#fff',
     backgroundColor: '#0014ff',
-    fontFamily: 'Comic Sans MS',
+    fontFamily: 'ComicSansMS',
     fontWeight: 'bold',
     padding: 12,
     borderRadius: 10,
@@ -133,21 +134,21 @@ const styles = StyleSheet.create({
   label: {
     fontSize: calculateFontSize(18),
     color: '#0014ff',
-    fontFamily: 'Comic Sans MS',
+    fontFamily: 'ComicSansMS',
     fontWeight: 'bold',
     marginBottom: 5,
   },
   label2: {
     fontSize: calculateFontSize(18),
     color: '#0014ff',
-    fontFamily: 'Comic Sans MS',
+    fontFamily: 'ComicSansMS',
     fontWeight: 'bold',
   },
   buttonText: {
     fontSize: calculateFontSize(20),
     fontWeight: 'bold',
     color: '#fff000',
-    fontFamily: 'Comic Sans MS',
+    fontFamily: 'ComicSansMS',
   },
   customButton: {
     backgroundColor: '#0014ff',
@@ -171,7 +172,7 @@ const styles = StyleSheet.create({
     fontSize: calculateFontSize(30),
     color: '#0014ff',
     fontWeight: 'bold',
-    fontFamily: 'Comic Sans MS',
+    fontFamily: 'ComicSansMS',
     marginBottom: 40,
   },
   infoContainer: {
@@ -180,11 +181,11 @@ const styles = StyleSheet.create({
     left: 0,
     right: 0,
     padding: 10,
-    backgroundColor: 'rgba(0, 0, 0, 0.5)', // Fondo semitransparente para que el texto sea legible
-    zIndex: 1, // Asegúrate de que esté encima de otros elementos
+    backgroundColor: 'rgba(0, 0, 0, 0.5)', // Fondo semitransparente
+    zIndex: 1, // Para asegurar que esté en frente de otros elementos
   },
   infoText: {
-    color: '#fff', // Color del texto
+    color: '#fff',
     fontSize: 12,
   },
 });
